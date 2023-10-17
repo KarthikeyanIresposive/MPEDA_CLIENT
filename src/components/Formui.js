@@ -20,7 +20,7 @@ const Formui = ({show,setShow,showbot,setShowBot}) => {
       };
   return (
     <>
-    <Modal show={show}   onHide={() => setShow(false)}  className="p-3">
+    <Modal show={show}   onHide={() => setShow(false)}  className="">
     <Modal.Header>
       {showbot ? <Modal.Title className="text-info fw-light">CHAT</Modal.Title>:
       <Modal.Title className="text-info fw-light">USER FORM</Modal.Title>
@@ -34,12 +34,18 @@ const Formui = ({show,setShow,showbot,setShowBot}) => {
       </button>
     </Modal.Header>
     {showbot == true ?
-
+    <div >
     <Chatbot
         config={config}
         messageParser={MessageParser}
         actionProvider={ActionProvider}
       />
+      <div className="d-flex mt-3">
+        <button className="btn btn-sm btn-success m-2">Download transcript</button>
+        <button className="btn btn-sm btn-success m-2">Send email</button>
+      </div>
+
+     </div>
       :<Modal.Body>
       <form action="">
       <input
