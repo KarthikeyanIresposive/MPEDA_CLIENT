@@ -40,7 +40,7 @@ const Formui = ({show,setShow,showbot,setShowBot}) => {
         messageParser={MessageParser}
         actionProvider={ActionProvider}
       />
-      <div className="d-flex mt-3">
+      <div className="d-flex mt-3 justify-content-center">
         <button className="btn btn-sm btn-success m-2">Download transcript</button>
         <button className="btn btn-sm btn-success m-2">Send email</button>
       </div>

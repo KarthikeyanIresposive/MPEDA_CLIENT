@@ -44,5 +44,12 @@ video{
   height: 10vh;
   background-color: #fff;
 }
+.react-chatbot-kit-chat-container {
+  width: 100% !important;
+}
+.react-chatbot-kit-chat-bot-message {
+  width: 70% !important;
+}
+
 
 
